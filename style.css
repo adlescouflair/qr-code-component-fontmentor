@@ -1,0 +1,90 @@
+@font-face {
+  font-family: Outfit;
+  src: url("./resources/font/Outfit/Outfit-VariableFont_wght.ttf");
+}
+
+:root {
+  --white : hsl(0, 0%, 100%);
+  --light-gray:hsl(212, 45%, 89%);
+  --gray-blue:hsl(220, 15%, 55%);
+  --dark-blue:hsl(218, 44%, 22%);
+
+}
+
+
+
+
+body {
+  background-color:  var(--light-gray);
+  font-family: 'Outfit';
+  height: 100vh;
+}
+
+.container {
+  height: 100vb;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ 
+}
+
+.cards {
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: space-around;
+}
+
+
+
+.card{
+  background-color: var(--white);
+  border-radius: 1rem;
+  padding: 0.7rem;
+ 
+  flex-direction: column;
+  width: 300px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.card > .card-body {
+  margin-bottom: 2rem;
+ text-align: center;
+ padding-left: 1rem;
+ padding-right: 1rem;
+}
+
+
+
+
+.card  img {
+
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+
+}
+
+.card-image {
+  display: flex;
+  flex-grow: 2;
+}
+
+
+h1.card-title {
+  text-align: center;
+  margin-bottom: 0;
+
+}
+
+
+p{
+  font-size: 0.9rem;
+  color: var(--gray-blue)
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
